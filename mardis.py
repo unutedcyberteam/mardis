@@ -1,5 +1,3 @@
-# Repo: https://github.com/kapten-kaizo/mardis
-# Author: @Kang_Ehem
 # Update at: 17 January 2022 23.17
 import os
 import sys
@@ -12,8 +10,8 @@ try:
 except Exception as i:
     exit(str(i))
 script_name = 'mardis'
-code_marshal = base64.b64decode('JXMKaW1wb3J0IHVuY29tcHlsZTYsIHN5cwpkZWYgZGVjb21waWxlKHZlcnNpb24sIGNvZGVfb2JqZWN0LCBpbyk6CiAgICB0cnk6CiAgICAgICAgdW5jb21weWxlNi5tYWluLmRlY29tcGlsZSh2ZXJzaW9uLCBjb2RlX29iamVjdCwgaW8pCiAgICBleGNlcHQ6IHByaW50KCJkZWNvbXBpbGUgZXJvcj8iKQppZiBoYXNhdHRyKHNzLCAiY29fY29kZSIpOgogICAgZGVjb21waWxlKDIuNywgc3MsIHN5cy5zdGRvdXQpCmVsc2U6IHByaW50KHNzKQ==')
-have_code = base64.b64decode('IyBEZWNvbXBpbGUgYnkgTWFyZGlzIChUb29scyBCeSBLYXB0ZW4tS2Fpem8pCiMgVGltZSBTdWNjZXMgZGVjb21waWxlIDogJXMKJXMK')
+code_marshal = base64.b64decode('JXMNCmltcG9ydCB1bmNvbXB5bGU2LCBzeXMNCmRlZiBkZWNvbXBpbGUodmVyc2lvbiwgY29kZV9vYmplY3QsIGlvKToNCiAgICB0cnk6DQogICAgICAgIHVuY29tcHlsZTYubWFpbi5kZWNvbXBpbGUodmVyc2lvbiwgY29kZV9vYmplY3QsIGlvKQ0KICAgIGV4Y2VwdDogcHJpbnQoImRlY29tcGlsZSBlcm9yPyIpDQppZiBoYXNhdHRyKHNzLCAiY29fY29kZSIpOg0KICAgIGRlY29tcGlsZSgyLjcsIHNzLCBzeXMuc3Rkb3V0KQ0KZWxzZTogcHJpbnQoc3Mp')
+have_code = base64.b64decode('IyBEZWNvbXBpbGUgYnkgQXNlcC1JVCBHYW56DQojIFRpbWUgU3VjY2VzIGRlY29tcGlsZSA6ICVzDQolcw0K')
 def rmbg(file_name):
     r = open(file_name).read()
     console = [line for line in r.splitlines() if not line.startswith("#")]
@@ -82,7 +80,7 @@ class Type:
         return self.message
 def main():
     if len(sys.argv) != 2:
-        exit("usage: mardis file_name.py")
+        exit("usage: dec file_name.py")
     globals()['dah_lah']=sys.argv[1]
     sys.argv=[dah_lah,"code.py",".master_key"]
     print("If You Get Error Decompile, Error code saved to %s"%sys.argv[1])
